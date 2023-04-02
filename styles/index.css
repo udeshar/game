@@ -79,6 +79,134 @@ body, html{
 }
 .fire{
           position: absolute;
+          width: 30px;
+          height: 50px;
+          background-image: url('../images/fire.png');
+          background-size: cover;
+          bottom: 0px;
+          left: 800px;
+}
+
+.slide{
+          animation: moveToLeft 3s linear infinite;
+}
+
+.slide2{
+          animation-delay: 3s;
+          animation-iteration-count: 2;
+}
+.slide3{
+          animation-delay: 8s;
+          animation-iteration-count: 5;
+}
+.slide4{
+          animation-delay: 15s;
+          animation-iteration-count: 10;
+}
+
+.jump{
+          animation: jump .6s ease-out forwards;
+}
+
+/* @keyframes jump{
+          0%{
+                    bottom : 0px;
+          }
+          50%{
+                    bottom : 100px;
+          }
+          100%{
+                    bottom : 0px;
+          }
+}
+
+@keyframes moveToLeft{
+          to{
+                    left: -100px;
+          }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+body, html{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+          display: grid;
+          place-items: center;
+          min-height: 100vh;
+          font-family: 'Space Mono', monospace;
+}
+.mainBorder{
+          border: 5px solid rgb(55, 55, 55);
+          background-color: rgb(183, 242, 57);
+          height: 90vh;
+          width: 95vw;
+          position: relative;
+}
+.makeCenter{
+          display: grid;
+          place-items: center;
+          overflow: hidden;
+}
+.startText{
+ text-align: center;
+}
+.startText button{
+          background-color: rgb(55, 55, 55);
+          color: rgb(183, 242, 57);
+          padding: 12px 30px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+}
+
+/* Game css */
+
+/*.mid-box{
+          position: relative;
+          width: 800px;
+          height: 200px;
+          border-bottom:  5px solid rgb(55, 55, 55);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+}
+.score{
+          position: absolute;
+          top: 100px;
+          width: 800px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+.score div{
+          display: flex;
+          align-items: center;
+}
+.score p:last-of-type{
+          margin-left: 20px;
+}
+.mid-box .startText{
+          display: none;
+}
+.mid-box.stop .startText{
+          display: block;
+}
+.mid-box.stop .jump, .mid-box.stop .fire{
+          animation-play-state: paused;
+}
+.spacecraft{
+          position: absolute;
+          width: 60px;
+          height: 50px;
+          bottom: 0px;
+          left: 0px;
+          background-image: url('../images/spacecraft.png');
+          background-size: cover;
+}
+.fire{
+          position: absolute;
           width: 40px;
           height: 50px;
           background-image: url('../images/fire.png');
@@ -106,7 +234,7 @@ body, html{
 
 .jump{
           animation: jump .6s ease-out forwards;
-}
+} */
 
 @keyframes jump{
           0%{
@@ -122,6 +250,80 @@ body, html{
 
 @keyframes moveToLeft{
           to{
-                    left: -100px;
+                    left: -120px;
           }
 }
+
+/*.mid-box{
+          position: relative;
+          width: 800px;
+          height: 200px;
+          border-bottom:  5px solid rgb(55, 55, 55);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+}
+.score{
+          position: absolute;
+          top: 100px;
+          width: 800px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+.score div{
+          display: flex;
+          align-items: center;
+}
+.score p:last-of-type{
+          margin-left: 20px;
+}
+.mid-box .startText{
+          display: none;
+}
+.mid-box.stop .startText{
+          display: block;
+}
+.mid-box.stop .jump, .mid-box.stop .fire{
+          animation-play-state: paused;
+}
+.spacecraft{
+          position: absolute;
+          width: 60px;
+          height: 50px;
+          bottom: 0px;
+          left: 0px;
+          background-image: url('../images/spacecraft.png');
+          background-size: cover;
+}
+.fire{
+          position: absolute;
+          width: 40px;
+          height: 50px;
+          background-image: url('../images/fire.png');
+          background-size: cover;
+          bottom: 0px;
+          left: 800px;
+}
+
+.slide{
+          animation: moveToLeft 3s linear infinite;
+}
+
+.slide2{
+          animation-delay: 2s;
+          animation-iteration-count: 2;
+}
+.slide3{
+          animation-delay: 8s;
+          animation-iteration-count: 5;
+}
+.slide4{
+          animation-delay: 15s;
+          animation-iteration-count: 10;
+}
+
+.jump{
+          animation: jump .6s ease-out forwards;
+} */
