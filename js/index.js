@@ -24,14 +24,27 @@ let isAlive = setInterval(() => {
     score = score + 1;
     let craftTop = parseInt(window.getComputedStyle(spacecraft).getPropertyValue("bottom"));
     let fireLeft = parseInt(window.getComputedStyle(fire).getPropertyValue("left"));
-    if((fireLeft > -20 && fireLeft < 40) && (craftTop < 50)){
+    if((fireLeft > -20 && fireLeft < 30) && (craftTop < 50)){
         midbox.classList.add('stop');
+        fire.style.animationDuration = '3s'
         if(score > hiscore){
             setHiScore(score)
         }
         score = 0;
     } else{
         document.getElementById('cscore').innerText=score;
+        if(score == 1000){
+            fire.style.animationDuration = '2.5s'
+        }
+        if(score == 2000){
+            fire.style.animationDuration = '2s'
+        }
+        if(score == 3000){
+            fire.style.animationDuration = '1.5s'
+        }
+        if(score == 4000){
+            fire.style.animationDuration = '1s'
+        }
     }
 }, 10);
 
